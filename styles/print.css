@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 50%;
+}
+
+.featured-button a:after {
+    content: " [" attr(href) "] ";
+}
+
+.header h1, .header h2, .header .outline {
+    width: 100%;
+    text-align: center;
+}
+
+.header h1 {
+    padding-top: 80px;
+    font-size: 3em;
+}
+
+.header h2 {
+    font-size: 1.5em;
+}
+
+.header .outline {
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.section {
+    display: block;
+    float: left;
+}
+
+.general-info {
+    padding-left: 5%;
+}
+
+.general-info, .schedule {
+    width: 45%;
+    font-size: 0.7em;
+}
+
+.section-title {
+    padding: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.registration {
+	display: none;
+}
+
+.featured-button a {
+    display: block;
+}
+
+.clearer {
+    clear: both;
+}
+
+.topic {
+    padding: 10px 5%;
+}
+
+.topic h2 {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.topic p {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+}
+
+img.right-aligned {
+    float: right;
+}
+
+img.left-aligned {
+    float: left;
+}
+
+.topic table {
+    width: 80%;
+    margin: auto;
+}
+
+.topic table td {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.topic table .featured-button {
+    margin: 0 auto;
+}
+
+.appendix h1 {
+    text-align: center;
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.appendix .topic h2 {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.appendix .topic p {
+    font-size: 0.9em;
+}
+
