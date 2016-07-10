@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>ペンギン　プログラミングクラブ</title>
+        <link rel="stylesheet" href="styles/main.css" media="screen" />
+        <link rel="stylesheet" href="styles/print.css" media="print" />
+        <link rel="shortcut icon" type="image/x-icon" href="/penguin/favicon.ico" />
+    </head>
+    <body>
+        <div class="header">
+            <h1><a href="/penguin">ペンギン</a></h1>
+            <h2>プログラミング クラブ</h2>
+            <div class="outline">
+                パソコンに興味がある<br />
+                ゲームで遊ぶのは好きだけど、ゲームを作ってみたい<br />
+                音楽やアニメをパソコンで作ってみたい
+            </div>
+        </div>
+        <div class="topic">
+            <h2>第１回：「プログラミングって何？」</h2>
+            <h3>概要</h3>
+            <p><b>日程</b>： 2016/7/9 (土) 9:30-11:30</p>
+            <p><b>参加者</b>： 子供13名（小３〜小６）、保護者(4名)</p>
+            <p><b>課題</b>： Scratchを使って「猫から逃げろ！」と言うゲームの作成</p>
+            <p style="text-align:center;">
+                <img src="images/20160709/neko-kara-nigero-movie.gif" alt="猫から逃げろ！" />
+            </p>
+            <h3>内容</h3>
+            <p>準備として、パソコンを無線LANに繋いで、Scratchのアカウントを作成した。</p>
+            <p>ゲームの基盤となる猫の動きを、少しずつ作った。</p>
+            <img src="images/20160709/neko-program.png" alt="猫のプログラム" style="float:right;" />
+            <ol>
+                <li>猫を「ずっと」左に行くように「１０歩動かす」ブロックを使った</li>
+                <li>「もし壁についたら跳ね返る」ブロックで左右に行くようにした</li>
+                <li>「回転方法を左右のみにする」を一番前に置くことで猫ちゃんが逆転しないようにした</li>
+                <li>「１５度回す」を前に入れることによって、猫ちゃんが斜めに進むようにした</li>
+                <li>イベントで「旗がクリックされたら」というブロックでプログラムの始まりを示した</li>
+                <li>「次のコスチュームにする」というブロックを使って、猫ちゃんが歩くようなアニメーションを実現した</li>
+            </ol>
+            <p>これで猫の動き完成。次に、プレイヤーが制御するネズミをゲームに追加した。</p>
+            <img src="images/20160709/nezumi-program.png" alt="猫のプログラム" style="float:left;" />
+            <ol>
+                <li>ネズミは「ずっと」、「マウスポインターへ行く」ようにした</li>
+                <li>これでゲームっぽくなったが、終わりがない。ゲームが終わる条件を定義した：「もしSprite1に触れたなら」（つまり、猫ちゃんに触れた）</li>
+                <li>その時に「全てを止める」ようにしたら、ネズミが猫ちゃんに捕まったらゲームが終わるようになった</li>
+            </ol>
+            <p style="clear:both;">最後に、ゲームが終わったことを知らせるために、背景を変えてみた。</p>
+            <ol>
+                <li>ステージで背景を足して、「GAME OVER」と書いた</li>
+                <li>ネズミの方で、ゲーム開始後に好きな背景にして、ゲーム終了直前にGAME OVERの背景に変えた</li>
+            </ol>
+            <p>これで「猫から逃げろ！」ゲーム完成！</p>
+            <h3>バリエーション</h3>
+            <p>これまではScratchを触ったことがない人も含めて全員作れた。おめでとうございます！</p>
+            <p>また、このゲームを改善した友達は沢山いた。例えば、背景を変えたり、猫を恐竜に変えたり、
+            ネズミをライオンに変えたりして工夫した人。</p>
+            <p>さらに、ゲームの動きも変えてみる人もいた。例えば、ネズミを肴に変身させ、
+            猫が常に魚に向くようにした。あるいは、猫の動きをランダムにし、
+            予測できない動きをするようにした人もいた。</p>
+            <p>それ以外にも様々なアイディアを実現できた。</p>
+            <h3>プログラミングって何？</h3>
+            <p>プログラミングは自分の思い通りにコンピューターを動かすことだ。</p>
+            <p>たった２時間でプログラミングの可能性を皆で実感できたのではないかと思います。</p>
+            <p>今後もプログラミングの可能性を少しずつ探っていき、皆で楽しんでいきましょう。</p>
+        </div>
+        <div class="footer">
+        </div>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-79550036-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>

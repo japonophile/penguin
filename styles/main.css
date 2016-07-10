@@ -46,6 +46,10 @@
     color: #444;
 }
 
+.header a {
+    text-decoration: none;
+}
+
 .section {
     display: block;
     float: left;
@@ -131,17 +135,29 @@ tr.past > td {
     padding: 10px 15%;
 }
 
-.topic h2 {
-    margin-top: 1em;
+.topic h2, .topic h3 {
     color: #f44336;
     font-weight: bold;
+}
+
+.topic h2 {
+    margin-top: 1em;
     font-size: 1.5em;
 }
 
-.topic p {
+.topic h3 {
+    margin-top: 1.5em;
+    font-size: 1.2em;
+}
+
+.topic p, .topic ol {
     margin-top: 0.5em;
     font-size: 1.2em;
     color: #444;
+}
+
+.topic li {
+    margin-left: 50px;
 }
 
 img.right-aligned {
