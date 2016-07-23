@@ -135,7 +135,7 @@ tr.past > td {
     padding: 10px 15%;
 }
 
-.topic h2, .topic h3 {
+.topic h2, .topic h3, .topic h4 {
     color: #f44336;
     font-weight: bold;
 }
@@ -148,6 +148,16 @@ tr.past > td {
 .topic h3 {
     margin-top: 1.5em;
     font-size: 1.2em;
+}
+
+.topic h4 {
+    padding-top: 1.5em;
+    font-size: 1.1em;
+    clear: both;
+}
+
+.topic p.goal {
+    color: #3020dd;
 }
 
 .topic p, .topic ol {
@@ -166,6 +176,12 @@ img.right-aligned {
 
 img.left-aligned {
     float: left;
+}
+
+img.illustration {
+    float: left;
+    width: 280px;
+    margin: 10px;
 }
 
 .topic table {
